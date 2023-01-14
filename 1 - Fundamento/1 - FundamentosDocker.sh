@@ -25,4 +25,17 @@ O que é Docker?
 Por que não usar uma Máquina Virtual?
 	- Além dos containers ter todas as vantagens(elasticidade, isolamento...) que uma VM tem, os containers tem o principal, que seria voce startar em menos de 1 segundo.
 	- Recursos do containers são absurdamentes menor
-	
+
+O que é um container?
+	- Isolamento de preocessos no mesmo kernel, podendo criar um subprocesso
+	- Sistema de arquivos criados a partir de uma imagem
+	- Ambientes leves e portaveis no qual aplicação sao executadas
+	- Encapsula todos os binarios e bibliotcas necessarios para execução de um app
+	- Algo entre um chroot e uma vm
+
+	recomendado:
+		- criar um container para cada processo ex(banco de dados, servidor apache...)
+			- Não recomendado usar tudo em um containers
+			- Por que?
+				- Por que cada container terá a sua uma demanda especifica, ex: o bd usa x recurso e usa x portas
+
