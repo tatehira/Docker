@@ -1,0 +1,18 @@
+Modos de executar o container
+******************************
+1- Daemon
+	- Executa o container e ele fica executando em background
+
+2- Interativo
+	- Para testes que sera feito nas aulas
+
+Testar o exercicio:
+	- docker container run debian bash --version
+	- Verificamos que por mais que seja o mesmo kernel, ele nao é o mesmo bash
+
+1- Execute
+	- run
+2- Listas os comandos ditados
+	- docker ps -a
+3- Executar um comando sem mostrar no historico
+	- docker run --rm comando
